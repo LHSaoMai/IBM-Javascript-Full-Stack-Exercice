@@ -49,3 +49,23 @@ let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 
 console.log("Authentication Status:", authenticationStatus);
+
+let dietary_status = "employee";
+let access_diery;
+
+switch (dietary_status){
+    case "employee":
+        access_diery = "Dietary Services";
+        break;
+    case "member":
+        access_diery = "Dietary Services and dietician";
+        break;
+    case "subscriber":
+        access_diery = "Partial Dietary Services";
+        break;
+    case "non-subscriber":
+        access_diery = "need to enroll or at least subscribe first";
+        break;
+    }
+
+console.log("dietary Status:", access_diery);
